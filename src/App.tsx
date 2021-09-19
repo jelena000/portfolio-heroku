@@ -6,14 +6,8 @@ import { Route } from 'react-router-dom';
 import Work from './components/Work/Work';
 import { HashRouter as Router } from 'react-router-dom'
 
-type stateType = {
-  a: number,
-  b? : string,
-}
-
 function App() {
-  const [state, setstate] = useState<stateType>({ a : 1, b: 'a'});
-
+//
   return (
     <div className="App">
         <Router basename={process.env.PUBLIC_URL}>
